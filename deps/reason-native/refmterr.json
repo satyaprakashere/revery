@@ -1,0 +1,30 @@
+{
+  "name": "refmterr",
+  "version": "3.3.0",
+  "description": "Reason Formatting of Errors",
+  "author": "Facebook Engineering",
+  "homepage": "https://reason-native.com",
+  "esy-prepublish-generate-opam": true,
+  "dependencies": {
+    "@opam/dune": "*",
+    "@opam/re": "*",
+    "@esy-ocaml/reason": "*",
+    "ocaml": " >= 4.2.0 < 4.10.0",
+    "@reason-native/pastel": "*",
+    "@opam/atdgen": "*",
+    "@reason-native/console": "*"
+  },
+  "devDependencies": {
+    "@opam/merlin": "*",
+    "ocaml": ">= 4.2.0 < 4.10.0",
+    "@esy-ocaml/reason": "^3.3.0"
+  },
+  "esy": {
+    "build": "dune build -p refmterr",
+    "install": "esy-installer refmterr.install"
+  },
+  "scripts": {
+    "test": "esy src/refmterr/runTests.cmd",
+    "release": "node ./scripts/esy-prepublish.js refmterr.json"
+  }
+}

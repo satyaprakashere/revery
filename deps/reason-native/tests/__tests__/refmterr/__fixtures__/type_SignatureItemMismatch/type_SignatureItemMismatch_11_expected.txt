@@ -1,0 +1,32 @@
+[27m[24m[2m[1m# Unformatted Error Output:[27m[24m[22m
+[2m# [22m[2mFile "tests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_11.ml", line 1:[22m
+[2m# [22m[2mError: The implementation tests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_11.ml[22m
+[2m# [22m[2m       does not match the interface tests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_11.cmi:[22m
+[2m# [22m[2m       Type declarations do not match:[22m
+[2m# [22m[2m         type wrongArity = float[22m
+[2m# [22m[2m       is not included in[22m
+[2m# [22m[2m         type 'a wrongArity = int[22m
+[2m# [22m[2m       File "tests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_11.mli", line 1, characters 0-24:[22m
+[2m# [22m[2m         Expected declaration[22m
+[2m# [22m[2m       File "tests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_11.ml", line 2, characters 0-23:[22m
+[2m# [22m[2m         Actual declaration[22m
+[2m# [22m[2m       They have different arities.[22m
+
+
+[7m[24m[22m[1m[31m ERROR [27m[24m[22m[39m [27m[4m[22m[36mtests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_11.ml[27m[24m[22m[39m[27m[4m[22m[2m:1 0-0[27m[24m[22m 
+
+[27m[24m[22m[2m[31m1 ┆ [27m[24m[22m[39m[27m[24m[22m[2m(* [27m[24m[22m[27m[24m[22m[2m[34mTest[27m[24m[22m[39m[27m[24m[22m[2m wrongly specified [27m[24m[22m[27m[24m[22m[2m[35mtype[27m[24m[22m[39m[27m[24m[22m[2m but from interface *)[27m[24m[22m
+[2m2 ┆ [22m[27m[24m[22m[2m[35mtype[27m[24m[22m[39m[27m[24m[22m[2m wrongArity = float[27m[24m[22m
+[2m3 ┆ [22m[27m[24m[22m[2m[35mtype[27m[24m[22m[39m[27m[24m[22m[2m wrongType = float[27m[24m[22m
+
+[1mThis module contains a type definition with the wrong number of type parameters [22m
+
+  At [27m[24m[22m[36mtests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_11.mli[27m[24m[22m[39m[2m:1[22m
+  the [27m[24m[22m[1m[32mexpected signature[27m[24m[22m[39m differs from [27m[24m[22m[1m[31mprovided signature[27m[24m[22m[39m:
+
+  [27m[24m[22m[1m[32mtype wrongArity('a) = int;[27m[24m[22m[39m
+  [27m[24m[22m[1m[31mtype wrongArity = float;[27m[24m[22m[39m
+
+
+
+

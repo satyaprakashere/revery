@@ -1,0 +1,39 @@
+{
+  "name": "@reason-native/fp",
+  "version": "0.0.1",
+  "description": "Reason Native file paths library.",
+  "author": "Facebook Engineering",
+  "homepage": "https://reason-native.com",
+  "esy-prepublish-generate-opam": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/facebookexperimental/reason-native"
+  },
+  "license": "MIT",
+  "keywords": [
+    "path",
+    "fp",
+    "filesystem",
+    "directories",
+    "reasonml",
+    "reason",
+    "ocaml",
+    "esy"
+  ],
+  "esy": {
+    "build": "dune build -p fp"
+  },
+  "scripts": {
+    "release": "node ./scripts/esy-prepublish.js fp.json"
+  },
+  "dependencies": {
+    "@opam/dune": "*",
+    "@esy-ocaml/reason": "*",
+    "ocaml": ">=4.2.0"
+  },
+  "devDependencies": {
+    "@opam/merlin": "*",
+    "ocaml": "~4.6.0",
+    "@reason-native/rely": "*"
+  }
+}

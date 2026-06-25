@@ -1,0 +1,4 @@
+expect.hasAssertions › no assertions
+<dim>expect.hasAssertions(</resetDimAndBold><dim>)</resetDimAndBold>
+
+Expected <green>at least one assertion</resetColor> to be called, but <red>received none</resetColor>.

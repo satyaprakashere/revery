@@ -1,0 +1,11 @@
+Pastel Console › Records
+===== Standard Out =====
+{<green>\"joe\"</resetColor>, <yellow>100</resetColor>}
+[
+  {<green>\"joe\"</resetColor>, <yellow>100</resetColor>},
+  {<green>\"sue\"</resetColor>, <yellow>18</resetColor>}
+]
+===== Standard Err =====
+
+========================
+

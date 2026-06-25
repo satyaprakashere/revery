@@ -1,0 +1,35 @@
+[27m[24m[2m[1m# Unformatted Error Output:[27m[24m[22m
+[2m# [22m[2mFile "tests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_7.ml", line 7, characters 24-61:[22m
+[2m# [22m[2mError: Signature mismatch:[22m
+[2m# [22m[2m       Modules do not match:[22m
+[2m# [22m[2m         sig val createElement : 'a -> unit end[22m
+[2m# [22m[2m       is not included in[22m
+[2m# [22m[2m         Sig[22m
+[2m# [22m[2m       The type `missingType' is required but not provided[22m
+[2m# [22m[2m       File "tests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_7.ml", line 4, characters 2-31:[22m
+[2m# [22m[2m         Expected declaration[22m
+
+
+[7m[24m[22m[1m[31m ERROR [27m[24m[22m[39m [27m[4m[22m[36mtests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_7.ml[27m[24m[22m[39m[27m[4m[22m[2m:7:24-9:3[27m[24m[22m 
+
+[2m 4 ┆ [22m[27m[24m[22m[2m  [27m[24m[22m[27m[24m[22m[2m[35mtype[27m[24m[22m[39m[27m[24m[22m[2m 'a missingType = 'a [27m[24m[22m[27m[24m[22m[2m[33mlist[27m[24m[22m[39m
+[2m 5 ┆ [22m[27m[24m[22m[2mend[27m[24m[22m
+[2m 6 ┆ [22m
+[27m[24m[22m[2m[31m 7 ┆ [27m[24m[22m[39m[27m[24m[22m[2m[35mmodule[27m[24m[22m[39m[27m[24m[22m[2m [27m[24m[22m[27m[24m[22m[2m[34mMyModule[27m[24m[22m[39m[27m[24m[22m[2m : [27m[24m[22m[27m[24m[22m[2m[34mSig[27m[24m[22m[39m[27m[24m[22m[2m = [27m[24m[22m[27m[4m[22m[1m[31mstruct[27m[24m[22m[39m
+[27m[24m[22m[2m[31m 8 ┆ [27m[24m[22m[39m  [27m[4m[22m[1m[31mlet createElement s = ()[27m[24m[22m[39m
+[27m[24m[22m[2m[31m 9 ┆ [27m[24m[22m[39m[27m[4m[22m[1m[31mend[27m[24m[22m[39m
+[2m10 ┆ [22m
+
+[1mThis module is missing the type named[22m [27m[24m[22m[1m[31mmissingType[27m[24m[22m[39m
+
+  The following signature requires that [1mmissingType[22m be defined:
+  [27m[24m[22m[36mtests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_7.ml[27m[24m[22m[39m[2m:4[22m
+
+
+[27m[24m[22m[1m[35mLearn:[27m[24m[22m[39m "Signatures" are interfaces that modules may implement.
+  You can indicate that a Reason file (.re) implements a signature by
+  creating an "interface file" (.rei) of the same name.
+  Modules nested inside of a Reason file may also opt into being checked
+  against any signature using the type constraint syntax `module M : Sig = ...`
+
+

@@ -1,0 +1,19 @@
+[27m[24m[2m[1m# Unformatted Error Output:[27m[24m[22m
+[2m# [22m[2mFile "tests/__tests__/refmterr/__fixtures__/type_IncompatibleType/type_IncompatibleType_6.ml", line 3, characters 32-39:[22m
+[2m# [22m[2mError: This expression has type string but an expression was expected of type[22m
+[2m# [22m[2m         string -> 'a -> 'b[22m
+
+
+[7m[24m[22m[1m[31m ERROR [27m[24m[22m[39m [27m[4m[22m[36mtests/__tests__/refmterr/__fixtures__/type_IncompatibleType/type_IncompatibleType_6.ml[27m[24m[22m[39m[27m[4m[22m[2m:3 32-39[27m[24m[22m 
+
+[2m1 ┆ [22m[27m[24m[22m[2m[35mlet[27m[24m[22m[39m[27m[24m[22m[2m iTakeAFunction f a = f [27m[24m[22m[27m[24m[22m[2m[32m"yes"[27m[24m[22m[39m[27m[24m[22m[2m a[27m[24m[22m
+[2m2 ┆ [22m
+[27m[24m[22m[2m[31m3 ┆ [27m[24m[22m[39m[27m[24m[22m[2m[35mlet[27m[24m[22m[39m[27m[24m[22m[2m () = ignore (iTakeAFunction [27m[24m[22m[27m[4m[22m[1m[31m"rebel"[27m[24m[22m[39m[27m[24m[22m[2m)[27m[24m[22m
+
+[1mThis type doesn't match what is expected.[22m
+
+  This type: [27m[24m[22m[1m[31mstring[27m[24m[22m[39m
+  Expecting: [27m[24m[22m[1m[32m(string, 'a) => 'b[27m[24m[22m[39m
+
+
+

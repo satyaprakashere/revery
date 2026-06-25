@@ -1,0 +1,26 @@
+Rely list matchers › toContainEqual › expect.list.toContainEqual failure output
+Running 1 test suite
+<inverse><bold><red> FAIL </inverse></resetDimAndBold></resetColor> <whiteBright>expect.list.toContainEqual failure output</resetColor>
+<bold><red>  \226\128\162 expect.list.toContainEqual failure output \226\128\186 empty list</resetDimAndBold></resetColor>
+
+    <dim>expect.list(</resetDimAndBold><red>list</resetColor><dim>).toContainEqual(</resetDimAndBold><green>value</resetColor><dim>)</resetDimAndBold> <dim>/* using == */</resetDimAndBold>
+    
+    Expected list:
+      <red>[]</resetColor>
+    To contain value: 
+      <green>7</resetColor>
+
+<bold><red>  \226\128\162 expect.list.toContainEqual failure output \226\128\186 missing element</resetDimAndBold></resetColor>
+
+    <dim>expect.list(</resetDimAndBold><red>list</resetColor><dim>).toContainEqual(</resetDimAndBold><green>value</resetColor><dim>)</resetDimAndBold> <dim>/* using == */</resetDimAndBold>
+    
+    Expected list:
+      <red>[1, 2]</resetColor>
+    To contain value: 
+      <green>7</resetColor>
+
+
+<bold><whiteBright>Test Suites: </resetDimAndBold></resetColor><bold><red>1 failed</resetDimAndBold></resetColor>, 0 passed, 1 total
+<bold><whiteBright>Tests:       </resetDimAndBold></resetColor><bold><red>2 failed</resetDimAndBold></resetColor>, 0 passed, 2 total
+<bold><whiteBright>Time:        </resetDimAndBold></resetColor>< 1ms
+

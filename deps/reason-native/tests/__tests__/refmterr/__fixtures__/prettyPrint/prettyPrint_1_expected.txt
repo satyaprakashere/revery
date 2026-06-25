@@ -1,0 +1,19 @@
+[27m[24m[2m[1m# Unformatted Error Output:[27m[24m[22m
+[2m# [22m[2mFile "tests/__tests__/refmterr/__fixtures__/prettyPrint/prettyPrint_1.ml", line 5, characters 38-45:[22m
+[2m# [22m[2mError: The constructor Coconut expects 1 argument(s),[22m
+[2m# [22m[2m       but is applied here to 0 argument(s)[22m
+
+
+[7m[24m[22m[1m[31m ERROR [27m[24m[22m[39m [27m[4m[22m[36mtests/__tests__/refmterr/__fixtures__/prettyPrint/prettyPrint_1.ml[27m[24m[22m[39m[27m[4m[22m[2m:5 38-45[27m[24m[22m 
+
+[2m 2 ┆ [22m
+[2m 3 ┆ [22m[27m[24m[22m[2m[35mtype[27m[24m[22m[39m[27m[24m[22m[2m bread =[27m[24m[22m
+[2m 4 ┆ [22m[27m[24m[22m[2m  | [27m[24m[22m[27m[24m[22m[2m[34mCoconut[27m[24m[22m[39m[27m[24m[22m[2m of [27m[24m[22m[27m[24m[22m[2m[33mstring[27m[24m[22m[39m
+[27m[24m[22m[2m[31m 5 ┆ [27m[24m[22m[39m[27m[24m[22m[2m[35mlet[27m[24m[22m[39m[27m[24m[22m[2m morning = [27m[24m[22m[27m[4m[22m[1m[31mCoconut[27m[24m[22m[39m
+[2m 6 ┆ [22m
+[2m 7 ┆ [22m
+[2m 8 ┆ [22m
+
+You must pass exactly 1 argument to this variant. You have passed 0 arguments.
+
+

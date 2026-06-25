@@ -1,0 +1,5 @@
+result matchers › failing output › expect.result.toBe Error is Ok
+<dim>expect.result(</resetDimAndBold><red>received</resetColor><dim>).toBe(</resetDimAndBold><green>expected</resetColor><dim>)</resetDimAndBold> <dim>/* using == */</resetDimAndBold>
+
+Expected: <green>Ok(failure :()</resetColor>
+Received: <red>Error(failure :()</resetColor>

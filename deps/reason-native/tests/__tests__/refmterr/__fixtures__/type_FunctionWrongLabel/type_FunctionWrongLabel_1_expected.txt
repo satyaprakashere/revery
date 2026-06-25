@@ -1,0 +1,20 @@
+[27m[24m[2m[1m# Unformatted Error Output:[27m[24m[22m
+[2m# [22m[2mFile "tests/__tests__/refmterr/__fixtures__/type_FunctionWrongLabel/type_FunctionWrongLabel_1.ml", line 3, characters 29-59:[22m
+[2m# [22m[2mError: This function should have type[22m
+[2m# [22m[2m         a:string list ->[22m
+[2m# [22m[2m         b:int * int * int * int * int -> c:string list -> unit -> 'a[22m
+[2m# [22m[2m       but its first argument is labelled ~aa[22m
+
+
+[7m[24m[22m[1m[31m ERROR [27m[24m[22m[39m [27m[4m[22m[36mtests/__tests__/refmterr/__fixtures__/type_FunctionWrongLabel/type_FunctionWrongLabel_1.ml[27m[24m[22m[39m[27m[4m[22m[2m:3 29-59[27m[24m[22m 
+
+[2m1 ┆ [22m[27m[24m[22m[2m[35mlet[27m[24m[22m[39m[27m[24m[22m[2m thisFunction [27m[24m[22m[27m[24m[22m[2m[33m~f[27m[24m[22m[39m[27m[24m[22m[2m args = f [27m[24m[22m[27m[24m[22m[2m[33m~a[27m[24m[22m[39m[27m[24m[22m[2m:[[27m[24m[22m[27m[24m[22m[2m[32m"hello"[27m[24m[22m[39m[27m[24m[22m[2m] [27m[24m[22m[27m[24m[22m[2m[33m~b[27m[24m[22m[39m[27m[24m[22m[2m:([27m[24m[22m[27m[24m[22m[2m[34m0[27m[24m[22m[39m[27m[24m[22m[2m, [27m[24m[22m[27m[24m[22m[2m[34m2[27m[24m[22m[39m[27m[24m[22m[2m, [27m[24m[22m[27m[24m[22m[2m[34m3[27m[24m[22m[39m[27m[24m[22m[2m, [27m[24m[22m[27m[24m[22m[2m[34m4[27m[24m[22m[39m[27m[24m[22m[2m, [27m[24m[22m[27m[24m[22m[2m[34m5[27m[24m[22m[39m[27m[24m[22m[2m) [27m[24m[22m[27m[24m[22m[2m[33m~c[27m[24m[22m[39m[27m[24m[22m[2m:[[27m[24m[22m[27m[24m[22m[2m[32m"anotherString"[27m[24m[22m[39m[27m[24m[22m[2m] ()[27m[24m[22m
+[2m2 ┆ [22m
+[27m[24m[22m[2m[31m3 ┆ [27m[24m[22m[39m[27m[24m[22m[2m[35mlet[27m[24m[22m[39m[27m[24m[22m[2m result = thisFunction [27m[24m[22m[27m[24m[22m[2m[33m~f[27m[24m[22m[39m[27m[24m[22m[2m:[27m[24m[22m[27m[4m[22m[1m[31m(fun ~aa ~b ~c u -> aa + b +c)[27m[24m[22m[39m
+
+[1mThis function should have type:[22m
+[27m[24m[22m[32m(~a: list(string), ~b: (int, int, int, int, int), ~c: list(string), unit) => 'a[27m[24m[22m[39m
+
+[1mBut its first argument is named[22m [27m[24m[22m[1m[31m~aa[27m[24m[22m[39m
+
+

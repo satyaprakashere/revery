@@ -1,0 +1,12 @@
+{
+  "name": "reason-cli",
+  "version": "3.3.3-macos-1",
+  "dependencies": {
+    "ocaml": ">= 4.2.0 < 6.0.0"
+  },
+  "esy": {
+    "build": [
+      ["true"]
+    ]
+  }
+}

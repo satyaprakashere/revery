@@ -1,0 +1,15 @@
+{
+  "name": "@reason-native/file-context-printer",
+  "version": "0.0.2",
+  "description": "Local shim: relaxed ocaml constraint for OCaml 5.x compatibility",
+  "dependencies": {
+    "@opam/dune": "*",
+    "@opam/re": "*",
+    "@esy-ocaml/reason": "*",
+    "@reason-native/pastel": "*",
+    "ocaml": ">=4.2.0"
+  },
+  "esy": {
+    "build": [["true"]]
+  }
+}

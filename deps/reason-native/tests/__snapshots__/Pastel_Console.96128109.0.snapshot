@@ -1,0 +1,11 @@
+Pastel Console › List of closures
+===== Standard Out =====
+[
+  <dim><cyan>closure(<id-sanitized>)</resetDimAndBold></resetColor>,
+  <dim><cyan>closure(<id-sanitized>)</resetDimAndBold></resetColor>,
+  <dim><cyan>closure(<id-sanitized>)</resetDimAndBold></resetColor>
+]
+===== Standard Err =====
+
+========================
+

@@ -20,6 +20,10 @@
       "PKG_CONFIG_PATH": {
         "val": "/usr/lib64/pkgconfig:$PKG_CONFIG_PATH",
         "scope": "global"
+      },
+      "CFLAGS": {
+        "val": "-Wno-error=implicit-function-declaration -Wno-error=incompatible-function-pointer-types",
+        "scope": "global"
       }
     },
     "build": "dune build -p reason-harfbuzz,reason-skia,reason-sdl2,Revery",
@@ -35,18 +39,18 @@
     ]
   },
   "dependencies": {
-    "@opam/bos": "0.2.0",
-    "@opam/ctypes": "0.15.1",
-    "@opam/dune": "^2.5.0",
+    "@opam/bos": "*",
+    "@opam/ctypes": "*",
+    "@opam/dune": "^3.0.0",
     "@opam/dune-configurator": "*",
-    "@opam/reason": "^3.6.2",
+    "@opam/reason": "^3.8.0",
     "@opam/lru": "bryphe/lru:lru.opam#2708c70",
     "@opam/lwt": "^5.0.0",
-    "@opam/lwt_ppx": "^1.1.0",
-    "@opam/markup": "0.8.2",
+    "@opam/lwt_ppx": "^2.1.0",
+    "@opam/markup": "*",
     "@opam/ppx_deriving": "*",
-    "@opam/ppx_optcomp": "v0.14.0",
-    "@opam/omd": "ocaml/omd:omd.opam#1535e3c",
+    "@opam/ppx_optcomp": "*",
+    "@opam/omd": "*",
     "@opam/uucp": "*",
     "@opam/uutf": "*",
     "@opam/charInfo_width": "*",
@@ -57,19 +61,35 @@
     "@revery/esy-harfbuzz": "^2.6.8002",
     "esy-skia": "revery-ui/esy-skia#1c81aac",
     "esy-sdl2": "^2.0.14000",
-    "flex": "jordwalke/flex#6ff12fe",
+    "flex": "file:./deps/flex",
     "reperf": "^1.5.1",
     "rench": "^1.10.0",
-    "rebez": "jchavarri/rebez#03fa3b7",
-    "@revery/timber": "^2.0.0",
+    "rebez": "file:./deps/rebez",
+    "@revery/timber": "file:./deps/timber",
     "@reason-native/rely": "^3.2.1"
   },
   "resolutions": {
-    "@esy-ocaml/reason": "EduardoRFS/reason:reason.json#35aa4df3de0daa60bdc1133dcf97855decac48f7"
+    "@esy-ocaml/reason": "path:./deps/reason",
+    "reason-cli": "path:./deps/reason-cli",
+    "@opam/reason-cli": "path:./deps/opam-reason-cli",
+    "reason": "path:./deps/reason",
+    "@opam/reason": "path:./deps/reason",
+    "@revery/timber": "path:./deps/timber",
+    "flex": "path:./deps/flex",
+    "flex/reason-cli": "path:./deps/reason-cli",
+    "@revery/timber/reason-cli": "path:./deps/reason-cli",
+    "@reason-native/rely/reason-cli": "path:./deps/reason-cli",
+    "flex/reason": "path:./deps/reason",
+    "@revery/timber/reason": "path:./deps/reason",
+    "@reason-native/rely/reason": "path:./deps/reason",
+    "@reason-native/cli": "path:./deps/reason-native",
+    "@reason-native/pastel": "path:./deps/reason-native/pastel.json",
+    "@reason-native/file-context-printer": "path:./deps/reason-native/file-context-printer.json",
+    "@reason-native/rely": "path:./deps/reason-native/rely.json"
   },
   "devDependencies": {
-    "ocaml": "4.12.x",
-    "esy-astyle": "zbaylin/esy-astyle#59bc21a",
-    "@opam/ocaml-lsp-server": "*"
+    "ocaml": "~5.2.0",
+    "esy-astyle": "./deps/esy-astyle",
+    "@opam/ocaml-lsp-server": "1.21.0"
   }
 }

@@ -1,0 +1,14 @@
+{
+  "name": "@reason-native/pastel",
+  "version": "0.3.1",
+  "description": "Local shim: relaxed ocaml constraint for OCaml 5.x compatibility",
+  "dependencies": {
+    "@opam/dune": "*",
+    "@opam/re": "*",
+    "@esy-ocaml/reason": "*",
+    "ocaml": ">=4.2.0"
+  },
+  "esy": {
+    "build": [["true"]]
+  }
+}

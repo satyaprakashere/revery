@@ -1,0 +1,7 @@
+mock matchers › failing output › expect.mock.nthReturnedWith threw exception
+<dim>expect.mock(</resetDimAndBold><red>mock</resetColor><dim>).nthReturnedWith(</resetDimAndBold><green>expected</resetColor><dim>)</resetDimAndBold> <dim>/* using == */</resetDimAndBold>
+
+Expected the first call to the mock function to have returned:
+  <green>2</resetColor>
+But the call raised:
+  <red>Division_by_zero</resetColor>

@@ -1,0 +1,39 @@
+[27m[24m[2m[1m# Unformatted Error Output:[27m[24m[22m
+[2m# [22m[2mFile "tests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_8.ml", line 6, characters 24-58:[22m
+[2m# [22m[2mError: Signature mismatch:[22m
+[2m# [22m[2m       Modules do not match:[22m
+[2m# [22m[2m         sig type wrongArity = int end[22m
+[2m# [22m[2m       is not included in[22m
+[2m# [22m[2m         Sig[22m
+[2m# [22m[2m       Type declarations do not match:[22m
+[2m# [22m[2m         type wrongArity = int[22m
+[2m# [22m[2m       is not included in[22m
+[2m# [22m[2m         type 'a wrongArity[22m
+[2m# [22m[2m       File "tests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_8.ml", line 3, characters 2-20:[22m
+[2m# [22m[2m         Expected declaration[22m
+[2m# [22m[2m       File "tests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_8.ml", line 7, characters 2-23:[22m
+[2m# [22m[2m         Actual declaration[22m
+[2m# [22m[2m       They have different arities.[22m
+
+
+[7m[24m[22m[1m[31m ERROR [27m[24m[22m[39m [27m[4m[22m[36mtests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_8.ml[27m[24m[22m[39m[27m[4m[22m[2m:6:24-8:3[27m[24m[22m 
+
+[2m3 ┆ [22m[27m[24m[22m[2m  [27m[24m[22m[27m[24m[22m[2m[35mtype[27m[24m[22m[39m[27m[24m[22m[2m 'a wrongArity[27m[24m[22m
+[2m4 ┆ [22m[27m[24m[22m[2mend[27m[24m[22m
+[2m5 ┆ [22m
+[27m[24m[22m[2m[31m6 ┆ [27m[24m[22m[39m[27m[24m[22m[2m[35mmodule[27m[24m[22m[39m[27m[24m[22m[2m [27m[24m[22m[27m[24m[22m[2m[34mMyModule[27m[24m[22m[39m[27m[24m[22m[2m : [27m[24m[22m[27m[24m[22m[2m[34mSig[27m[24m[22m[39m[27m[24m[22m[2m = [27m[24m[22m[27m[4m[22m[1m[31mstruct[27m[24m[22m[39m
+[27m[24m[22m[2m[31m7 ┆ [27m[24m[22m[39m  [27m[4m[22m[1m[31mtype wrongArity = int[27m[24m[22m[39m
+[27m[24m[22m[2m[31m8 ┆ [27m[24m[22m[39m[27m[4m[22m[1m[31mend[27m[24m[22m[39m
+[2m9 ┆ [22m
+
+[1mThis module contains a type definition with the wrong number of type parameters [22m
+
+  At [27m[24m[22m[36mtests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_8.ml[27m[24m[22m[39m[2m:3[22m
+  the [27m[24m[22m[1m[32mexpected signature[27m[24m[22m[39m differs from [27m[24m[22m[1m[31mprovided signature[27m[24m[22m[39m:
+
+  [27m[24m[22m[1m[32mtype wrongArity('a);[27m[24m[22m[39m
+  [27m[24m[22m[1m[31mtype wrongArity = int;[27m[24m[22m[39m
+
+
+
+

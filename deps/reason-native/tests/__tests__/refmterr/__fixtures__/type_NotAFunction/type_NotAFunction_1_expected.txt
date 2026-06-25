@@ -1,0 +1,16 @@
+[27m[24m[2m[1m# Unformatted Error Output:[27m[24m[22m
+[2m# [22m[2mFile "tests/__tests__/refmterr/__fixtures__/type_NotAFunction/type_NotAFunction_1.ml", line 2, characters 2-23:[22m
+[2m# [22m[2mError: This expression has type[22m
+[2m# [22m[2m         int list list list list list list list list list list[22m
+[2m# [22m[2m       This is not a function; it cannot be applied.[22m
+
+
+[7m[24m[22m[1m[31m ERROR [27m[24m[22m[39m [27m[4m[22m[36mtests/__tests__/refmterr/__fixtures__/type_NotAFunction/type_NotAFunction_1.ml[27m[24m[22m[39m[27m[4m[22m[2m:2 2-23[27m[24m[22m 
+
+[2m1 ┆ [22m[27m[24m[22m[2m[35mlet[27m[24m[22m[39m[27m[24m[22m[2m a =[27m[24m[22m
+[27m[24m[22m[2m[31m2 ┆ [27m[24m[22m[39m[27m[24m[22m[2m  [27m[24m[22m[27m[4m[22m[1m[31m[[[[[[[[[[5]]]]]]]]]][27m[24m[22m[39m[27m[24m[22m[2m ()[27m[24m[22m
+
+Perhaps you have forgoten a semicolon, or a comma somewhere.
+This has type list(list(list(list(list(list(list(list(list(list(int)))))))))), but you are calling it as a function.
+
+

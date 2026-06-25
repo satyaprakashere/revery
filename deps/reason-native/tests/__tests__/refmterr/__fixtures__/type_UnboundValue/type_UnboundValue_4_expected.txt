@@ -1,0 +1,20 @@
+[27m[24m[2m[1m# Unformatted Error Output:[27m[24m[22m
+[2m# [22m[2mFile "tests/__tests__/refmterr/__fixtures__/type_UnboundValue/type_UnboundValue_4.ml", line 6, characters 19-29:[22m
+[2m# [22m[2mError: Unbound value poshanossy[22m
+[2m# [22m[2mHint: Did you mean poshanessy, poshanissy, poshanyssy or poshanassy?[22m
+
+
+[7m[24m[22m[1m[31m ERROR [27m[24m[22m[39m [27m[4m[22m[36mtests/__tests__/refmterr/__fixtures__/type_UnboundValue/type_UnboundValue_4.ml[27m[24m[22m[39m[27m[4m[22m[2m:6 19-29[27m[24m[22m 
+
+[2m3 ┆ [22m[27m[24m[22m[2m[35mlet[27m[24m[22m[39m[27m[24m[22m[2m poshanissy = [27m[24m[22m[27m[24m[22m[2m[34m3[27m[24m[22m[39m
+[2m4 ┆ [22m[27m[24m[22m[2m[35mlet[27m[24m[22m[39m[27m[24m[22m[2m poshanyssy = [27m[24m[22m[27m[24m[22m[2m[34m4[27m[24m[22m[39m
+[2m5 ┆ [22m
+[27m[24m[22m[2m[31m6 ┆ [27m[24m[22m[39m[27m[24m[22m[2m[35mlet[27m[24m[22m[39m[27m[24m[22m[2m () = print_int [27m[24m[22m[27m[4m[22m[1m[31mposhanossy[27m[24m[22m[39m
+
+[27m[24m[22m[1m[31mposhanossy[27m[24m[22m[39m can't be found. Did you mean one of these?
+[27m[24m[22m[33m- poshanassy[27m[24m[22m[39m
+[27m[24m[22m[33m- poshanyssy[27m[24m[22m[39m
+[27m[24m[22m[33m- poshanissy[27m[24m[22m[39m
+[27m[24m[22m[33m- poshanessy[27m[24m[22m[39m
+
+

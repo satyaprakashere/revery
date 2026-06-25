@@ -1,0 +1,15 @@
+[27m[24m[2m[1m# Unformatted Error Output:[27m[24m[22m
+[2m# [22m[2mFile "tests/__tests__/refmterr/__fixtures__/type_AppliedWithoutLabel/type_AppliedWithoutLabel_1.ml", line 4, characters 6-7:[22m
+[2m# [22m[2mError: The function applied to this argument has type a:'a -> b:'b -> unit[22m
+
+
+[7m[24m[22m[1m[31m ERROR [27m[24m[22m[39m [27m[4m[22m[36mtests/__tests__/refmterr/__fixtures__/type_AppliedWithoutLabel/type_AppliedWithoutLabel_1.ml[27m[24m[22m[39m[27m[4m[22m[2m:4 6-7[27m[24m[22m 
+
+[2m1 ┆ [22m[27m[24m[22m[2m[35mlet[27m[24m[22m[39m[27m[24m[22m[2m f [27m[24m[22m[27m[24m[22m[2m[33m~a[27m[24m[22m[39m[27m[24m[22m[2m [27m[24m[22m[27m[24m[22m[2m[33m~b[27m[24m[22m[39m[27m[24m[22m[2m c = ()[27m[24m[22m
+[2m2 ┆ [22m
+[2m3 ┆ [22m[27m[24m[22m[2m[35mlet[27m[24m[22m[39m[27m[24m[22m[2m () =[27m[24m[22m
+[27m[24m[22m[2m[31m4 ┆ [27m[24m[22m[39m[27m[24m[22m[2m  f [27m[24m[22m[27m[24m[22m[2m[34m1[27m[24m[22m[39m[27m[24m[22m[2m [27m[24m[22m[27m[4m[22m[1m[31m2[27m[24m[22m[39m
+
+
+
+This argument cannot be applied without label

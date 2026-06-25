@@ -1,0 +1,4 @@
+mock matchers › failing output › expect.mock.not.toReturnTimes
+<dim>expect.mock(</resetDimAndBold><red>mock</resetColor><dim>).</resetDimAndBold>not<dim>.toReturnTimes(</resetDimAndBold><green>expected</resetColor><dim>)</resetDimAndBold>
+
+Expected the mock not have returned <green>two times</resetColor>, but it returned exactly <red>two times</resetColor>.

@@ -1,0 +1,5 @@
+mock matchers › failing output › expect.mock.not.toBeCalled overflow print
+<dim>expect.mock(</resetDimAndBold><red>mock</resetColor><dim>).</resetDimAndBold>not<dim>.toBeCalled(</resetDimAndBold><dim>)</resetDimAndBold>
+
+Expected the mock not be called, but it was called with:
+  <red>{10, 11}</resetColor>, <red>{7, 8}</resetColor>, <red>{5, 6}</resetColor><red> and two more calls.</resetColor>

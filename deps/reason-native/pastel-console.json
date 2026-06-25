@@ -1,0 +1,29 @@
+{
+  "name": "@reason-native/pastel-console",
+  "version": "0.0.0",
+  "description": "My Project",
+  "author": "Facebook Engineering",
+  "homepage": "https://reason-native.com",
+  "esy-prepublish-generate-opam": true,
+  "esy": {
+    "build": "dune build -p pastel-console",
+    "install": "esy-installer pastel-console.install"
+  },
+  "scripts": {
+    "test": "esy x TestPastelConsole.exe",
+    "release": "node ./scripts/esy-prepublish.js pastel-console.json"
+  },
+  "dependencies": {
+    "@reason-native/console": "*",
+    "@reason-native/pastel": "*",
+    "@opam/dune": "*",
+    "@esy-ocaml/reason": "*",
+    "ocaml": ">=4.2.0"
+  },
+  "devDependencies": {
+    "@esy-ocaml/merlin": "*",
+    "ocaml": "~4.6.0",
+    "@reason-native/console": "link:../console",
+    "@reason-native/pastel": "link:../pastel"
+  }
+}

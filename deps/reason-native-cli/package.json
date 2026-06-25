@@ -1,0 +1,17 @@
+{
+  "name": "@reason-native/cli",
+  "version": "0.0.1-alpha",
+  "description": "Local shim: relaxed ocaml constraint for OCaml 5.x compatibility",
+  "dependencies": {
+    "@opam/dune": "*",
+    "@opam/re": "*",
+    "@reason-native/pastel": "*",
+    "@esy-ocaml/reason": "*",
+    "ocaml": ">=4.2.0"
+  },
+  "esy": {
+    "build": [
+      ["true"]
+    ]
+  }
+}

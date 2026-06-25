@@ -1,0 +1,36 @@
+[27m[24m[2m[1m# Unformatted Error Output:[27m[24m[22m
+[2m# [22m[2mFile "tests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_12.ml", line 1:[22m
+[2m# [22m[2mError: The implementation tests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_12.ml[22m
+[2m# [22m[2m       does not match the interface tests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_12.cmi:[22m
+[2m# [22m[2m       The type `wrongType' is required but not provided[22m
+[2m# [22m[2m       File "tests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_12.mli", line 3, characters 0-22:[22m
+[2m# [22m[2m         Expected declaration[22m
+[2m# [22m[2m       The type `wrongArity' is required but not provided[22m
+[2m# [22m[2m       File "tests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_12.mli", line 2, characters 0-23:[22m
+[2m# [22m[2m         Expected declaration[22m
+
+
+[7m[24m[22m[1m[31m ERROR [27m[24m[22m[39m [27m[4m[22m[36mtests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_12.ml[27m[24m[22m[39m[27m[4m[22m[2m:1 0-0[27m[24m[22m 
+
+[27m[24m[22m[2m[31m1 ┆ [27m[24m[22m[39m[27m[24m[22m[2m(* [27m[24m[22m[27m[24m[22m[2m[34mTest[27m[24m[22m[39m[27m[24m[22m[2m wrongly specified values but from interface *)[27m[24m[22m
+[2m2 ┆ [22m[27m[24m[22m[2m[35mlet[27m[24m[22m[39m[27m[24m[22m[2m createElement s = [27m[24m[22m[27m[24m[22m[2m[34m0[27m[24m[22m[39m
+[2m3 ┆ [22m[27m[24m[22m[2m[35mlet[27m[24m[22m[39m[27m[24m[22m[2m createEleml ent2 s = [27m[24m[22m[27m[24m[22m[2m[32m"hi"[27m[24m[22m[39m
+
+[1mThis module is missing the type named[22m [27m[24m[22m[1m[31mwrongArity[27m[24m[22m[39m
+
+  The following signature requires that [1mwrongArity[22m be defined:
+  [27m[24m[22m[36mtests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_12.mli[27m[24m[22m[39m[2m:2[22m
+
+[1mThis module is missing the type named[22m [27m[24m[22m[1m[31mwrongType[27m[24m[22m[39m
+
+  The following signature requires that [1mwrongType[22m be defined:
+  [27m[24m[22m[36mtests/__tests__/refmterr/__fixtures__/type_SignatureItemMismatch/type_SignatureItemMismatch_12.mli[27m[24m[22m[39m[2m:3[22m
+
+
+[27m[24m[22m[1m[35mLearn:[27m[24m[22m[39m "Signatures" are interfaces that modules may implement.
+  You can indicate that a Reason file (.re) implements a signature by
+  creating an "interface file" (.rei) of the same name.
+  Modules nested inside of a Reason file may also opt into being checked
+  against any signature using the type constraint syntax `module M : Sig = ...`
+
+

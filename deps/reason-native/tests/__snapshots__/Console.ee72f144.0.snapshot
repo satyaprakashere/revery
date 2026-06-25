@@ -1,0 +1,29 @@
+Console › Circular lists
+===== Standard Out =====
+
+===== Standard Err =====
+[
+  {[\"circular\"]},
+  {[\"list\"]},
+  {[\"should\"]},
+  {[\"not\"]},
+  {[\"error\"]},
+  {[\"but\"]},
+  {[\"detect\"]},
+  {[\"length-exceeded\"]},
+  {[\"circular\"]},
+  {[\"list\"]},
+  {[\"should\"]},
+  {[\"not\"]},
+  {[\"error\"]},
+  {[\"but\"]},
+  {[\"detect\"]},
+  {[\"length-exceeded\"]},
+  {[\"circular\"]},
+  {[\"list\"]},
+  {[\"should\"]},
+  {[\"not\"]},
+  @max-length
+]
+========================
+

@@ -1,0 +1,10 @@
+--- a/src/dune_scheduler/fsevents_stubs.c
++++ b/src/dune_scheduler/fsevents_stubs.c
+@@ -13,7 +13,8 @@
+ #if defined(__APPLE__) && MAC_OS_X_VERSION_MIN_REQUIRED >= 101000
+ 
+ #include <CoreFoundation/CoreFoundation.h>
+-#include <CoreServices/CoreServices.h>
++#include <FSEvents/FSEvents.h>
++#include <dispatch/dispatch.h>
+ #include <pthread.h>

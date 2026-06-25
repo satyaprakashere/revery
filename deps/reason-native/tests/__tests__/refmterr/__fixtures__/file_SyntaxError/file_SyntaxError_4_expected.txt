@@ -1,0 +1,17 @@
+[27m[24m[2m[1m# Unformatted Error Output:[27m[24m[22m
+[2m# [22m[2mFile "tests/__tests__/refmterr/__fixtures__/file_SyntaxError/file_SyntaxError_4.ml", line 5, characters 23-24:[22m
+[2m# [22m[2mError: Syntax error[22m
+
+
+[7m[24m[22m[1m[31m ERROR [27m[24m[22m[39m [27m[4m[22m[36mtests/__tests__/refmterr/__fixtures__/file_SyntaxError/file_SyntaxError_4.ml[27m[24m[22m[39m[27m[4m[22m[2m:5 23-24[27m[24m[22m 
+
+[2m2 ┆ [22m[27m[24m[22m[2m  path: [27m[24m[22m[27m[24m[22m[2m[33mstring[27m[24m[22m[39m[27m[24m[22m[2m;[27m[24m[22m
+[2m3 ┆ [22m[27m[24m[22m[2m  messages: message [27m[24m[22m[27m[24m[22m[2m[33mlist[27m[24m[22m[39m[27m[24m[22m[2m;[27m[24m[22m
+[2m4 ┆ [22m[27m[24m[22m[2m}[27m[24m[22m
+[27m[24m[22m[2m[31m5 ┆ [27m[24m[22m[39m[27m[24m[22m[2m[35mtype[27m[24m[22m[39m[27m[24m[22m[2m output = file [27m[24m[22m[27m[24m[22m[2m[33mlist[27m[24m[22m[39m[27m[4m[22m[1m[31m;[27m[24m[22m[39m
+
+This is a syntax error.
+Make sure all imperative statements, as well as let/type bindings have exactly one semicolon separating them.
+Note: the location indicated might not be accurate.
+
+

@@ -1,0 +1,12 @@
+[27m[24m[2m[1m# Unformatted Error Output:[27m[24m[22m
+[2m# [22m[2mFile "tests/__tests__/refmterr/__fixtures__/type_UnboundValue/type_UnboundValue_2.ml", line 1, characters 21-24:[22m
+[2m# [22m[2mError: Unbound value nvm[22m
+
+
+[7m[24m[22m[1m[31m ERROR [27m[24m[22m[39m [27m[4m[22m[36mtests/__tests__/refmterr/__fixtures__/type_UnboundValue/type_UnboundValue_2.ml[27m[24m[22m[39m[27m[4m[22m[2m:1 21-24[27m[24m[22m 
+
+[27m[24m[22m[2m[31m1 ┆ [27m[24m[22m[39m[27m[24m[22m[2m[35mlet[27m[24m[22m[39m[27m[24m[22m[2m callMe perhaps = [27m[24m[22m[27m[4m[22m[1m[31mnvm[27m[24m[22m[39m[27m[24m[22m[2m [27m[24m[22m[27m[24m[22m[2m[34m1[27m[24m[22m[39m
+
+The value named [27m[24m[22m[1m[31mnvm[27m[24m[22m[39m can't be found. Could it be a typo?
+
+

@@ -1,0 +1,8 @@
+TestRunner › passing tests
+Running 1 test suite
+<inverse><bold><green> PASS </inverse></resetDimAndBold></resetColor> <whiteBright>passing tests</resetColor>
+
+<bold><whiteBright>Test Suites: </resetDimAndBold></resetColor>0 failed, <bold><green>1 passed</resetDimAndBold></resetColor>, 1 total
+<bold><whiteBright>Tests:       </resetDimAndBold></resetColor>0 failed, <bold><green>2 passed</resetDimAndBold></resetColor>, 2 total
+<bold><whiteBright>Time:        </resetDimAndBold></resetColor>< 1ms
+

@@ -1,0 +1,14 @@
+[27m[24m[2m[1m# Unformatted Error Output:[27m[24m[22m
+[2m# [22m[2mFile "tests/__tests__/refmterr/__fixtures__/type_UnboundTypeConstructor/type_UnboundTypeConstructor_1.ml", line 2, characters 13-21:[22m
+[2m# [22m[2mError: Unbound type constructor whereAmI[22m
+
+
+[7m[24m[22m[1m[31m ERROR [27m[24m[22m[39m [27m[4m[22m[36mtests/__tests__/refmterr/__fixtures__/type_UnboundTypeConstructor/type_UnboundTypeConstructor_1.ml[27m[24m[22m[39m[27m[4m[22m[2m:2 13-21[27m[24m[22m 
+
+[2m1 ┆ [22m[27m[24m[22m[2m[35mtype[27m[24m[22m[39m[27m[24m[22m[2m asd =[27m[24m[22m
+[27m[24m[22m[2m[31m2 ┆ [27m[24m[22m[39m[27m[24m[22m[2m  | [27m[24m[22m[27m[24m[22m[2m[34mHello[27m[24m[22m[39m[27m[24m[22m[2m of [27m[24m[22m[27m[4m[22m[1m[31mwhereAmI[27m[24m[22m[39m
+[2m3 ┆ [22m[27m[24m[22m[2m  | [27m[24m[22m[27m[24m[22m[2m[34mGoodbye[27m[24m[22m[39m
+
+The type [27m[24m[22m[1m[31mwhereAmI[27m[24m[22m[39m can't be found.
+
+

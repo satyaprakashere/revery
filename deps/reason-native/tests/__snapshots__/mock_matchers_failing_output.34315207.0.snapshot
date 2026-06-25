@@ -1,0 +1,7 @@
+mock matchers › failing output › expect.mock.toThrowException wrong exception
+<dim>expect.mock(</resetDimAndBold><red>function</resetColor><dim>).toThrowException(</resetDimAndBold><green>exception</resetColor><dim>)</resetDimAndBold>
+
+Expected the function to throw an error matching:
+  <green>Not_found</resetColor>
+Instead, it threw:
+  <red>Division_by_zero</resetColor>

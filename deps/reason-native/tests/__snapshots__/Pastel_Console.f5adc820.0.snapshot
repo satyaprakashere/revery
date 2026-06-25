@@ -1,0 +1,19 @@
+Pastel Console › Lists
+===== Standard Out =====
+[
+  <green>\"this\"</resetColor>,
+  <green>\"is\"</resetColor>,
+  <green>\"a\"</resetColor>,
+  <green>\"list\"</resetColor>,
+  <green>\"of\"</resetColor>,
+  <green>\"strings\"</resetColor>
+]
+[
+  <magenta>4.9</resetColor>,
+  <magenta>5.</resetColor>,
+  <magenta>999.99</resetColor>
+]
+===== Standard Err =====
+
+========================
+

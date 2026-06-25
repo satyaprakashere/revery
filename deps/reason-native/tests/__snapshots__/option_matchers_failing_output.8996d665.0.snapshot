@@ -1,0 +1,4 @@
+option matchers › failing output › expect.option.toBeNone
+<dim>expect.option(</resetDimAndBold><red>received</resetColor><dim>).toBeNone(</resetDimAndBold><dim>)</resetDimAndBold>
+
+Expected value to be None, but received: <red>Some(42)</resetColor>

@@ -1,0 +1,18 @@
+[27m[24m[2m[1m# Unformatted Error Output:[27m[24m[22m
+[2m# [22m[2mFile "tests/__tests__/refmterr/__fixtures__/type_UnboundModule/type_UnboundModule_2.ml", line 10, characters 5-63:[22m
+[2m# [22m[2mError: Unbound module HelloWorld.ThisMorningIThink.IWillEatSomeDelicious.Pancaek[22m
+[2m# [22m[2mHint: Did you mean Pancake?[22m
+
+
+[7m[24m[22m[1m[31m ERROR [27m[24m[22m[39m [27m[4m[22m[36mtests/__tests__/refmterr/__fixtures__/type_UnboundModule/type_UnboundModule_2.ml[27m[24m[22m[39m[27m[4m[22m[2m:10 5-63[27m[24m[22m 
+
+[2m 7 ┆ [22m[27m[24m[22m[2m  end[27m[24m[22m
+[2m 8 ┆ [22m[27m[24m[22m[2mend[27m[24m[22m
+[2m 9 ┆ [22m
+[27m[24m[22m[2m[31m10 ┆ [27m[24m[22m[39m[27m[24m[22m[2m[35mopen[27m[24m[22m[39m[27m[24m[22m[2m [27m[24m[22m[27m[4m[22m[1m[31mHelloWorld.ThisMorningIThink.IWillEatSomeDelicious.Pancaek[27m[24m[22m[39m
+
+Module [27m[24m[22m[1m[31mHelloWorld.ThisMorningIThink.IWillEatSomeDelicious.Pancaek;[27m[24m[22m[39m not found in included libraries.
+
+Hint: did you mean [27m[24m[22m[33mPancake[27m[24m[22m[39m?
+
+

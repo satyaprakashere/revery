@@ -1,0 +1,17 @@
+[27m[24m[2m[1m# Unformatted Error Output:[27m[24m[22m
+[2m# [22m[2mFile "tests/__tests__/refmterr/__fixtures__/type_IncompatibleType/type_IncompatibleType_2.ml", line 1, characters 4-8:[22m
+[2m# [22m[2mError: This expression has type bool but an expression was expected of type[22m
+[2m# [22m[2m         'a ref[22m
+
+
+[7m[24m[22m[1m[31m ERROR [27m[24m[22m[39m [27m[4m[22m[36mtests/__tests__/refmterr/__fixtures__/type_IncompatibleType/type_IncompatibleType_2.ml[27m[24m[22m[39m[27m[4m[22m[2m:1 4-8[27m[24m[22m 
+
+[27m[24m[22m[2m[31m1 ┆ [27m[24m[22m[39m[27m[24m[22m[2m[33mif[27m[24m[22m[39m[27m[24m[22m[2m ![27m[24m[22m[27m[4m[22m[1m[31mtrue[27m[24m[22m[39m[27m[24m[22m[2m then [27m[24m[22m[27m[24m[22m[2m[32m"asd"[27m[24m[22m[39m[27m[24m[22m[2m [27m[24m[22m[27m[24m[22m[2m[33melse[27m[24m[22m[39m[27m[24m[22m[2m [27m[24m[22m[27m[24m[22m[2m[32m"a"[27m[24m[22m[39m
+
+[1mThis type doesn't match what is expected.[22m
+
+  This type: [27m[24m[22m[1m[31mbool[27m[24m[22m[39m
+  Expecting: [27m[24m[22m[1m[32mref('a)[27m[24m[22m[39m
+
+
+

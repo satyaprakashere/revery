@@ -1,0 +1,21 @@
+[27m[24m[2m[1m# Unformatted Error Output:[27m[24m[22m
+[2m# [22m[2mFile "tests/__tests__/refmterr/__fixtures__/type_RecordFieldsUndefined/type_RecordFieldsUndefined_1.ml", line 6, characters 10-22:[22m
+[2m# [22m[2mError: Some record fields are undefined: b[22m
+
+
+[7m[24m[22m[1m[31m ERROR [27m[24m[22m[39m [27m[4m[22m[36mtests/__tests__/refmterr/__fixtures__/type_RecordFieldsUndefined/type_RecordFieldsUndefined_1.ml[27m[24m[22m[39m[27m[4m[22m[2m:6:10-8:1[27m[24m[22m 
+
+[2m3 ┆ [22m[27m[24m[22m[2m  b: [27m[24m[22m[27m[24m[22m[2m[33mstring[27m[24m[22m[39m[27m[24m[22m[2m;[27m[24m[22m
+[2m4 ┆ [22m[27m[24m[22m[2m}[27m[24m[22m
+[2m5 ┆ [22m
+[27m[24m[22m[2m[31m6 ┆ [27m[24m[22m[39m[27m[24m[22m[2m[35mlet[27m[24m[22m[39m[27m[24m[22m[2m bla = [27m[24m[22m[27m[4m[22m[1m[31m{[27m[24m[22m[39m
+[27m[24m[22m[2m[31m7 ┆ [27m[24m[22m[39m  [27m[4m[22m[1m[31ma = 5;[27m[24m[22m[39m
+[27m[24m[22m[2m[31m8 ┆ [27m[24m[22m[39m[27m[4m[22m[1m[31m}[27m[24m[22m[39m
+
+You forgot to include the record field named [27m[24m[22m[1m[31mb[27m[24m[22m[39m.
+
+If you are certain this record shouldn't have a field named [1mb[22m then check 
+if you use this record in a way that would make the type checker think this
+record is of some other type - one that does have a [1mb[22m field. Where else is it used?
+
+

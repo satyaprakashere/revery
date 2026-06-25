@@ -1,0 +1,13 @@
+Pastel Console › Max length
+===== Standard Out =====
+
+===== Standard Err =====
+[
+  <yellow>2</resetColor>,
+  <yellow>3</resetColor>,
+  <yellow>4</resetColor>,
+  <yellow>5</resetColor>,
+  <yellow>6</resetColor>
+]
+========================
+
