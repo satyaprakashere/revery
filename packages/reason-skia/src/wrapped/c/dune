@@ -33,7 +33,7 @@
 (rule
  (targets c_stubs.o)
  (deps
-  (:c c_stubs.c c_stubs.h)
+  (:c c_stubs.cpp c_stubs.h)
   c_flags.txt)
  (action
-  (run %{cc} %{read-lines:c_flags.txt} -c %{c})))
+  (run %{cc} -x c++ -std=c++17 %{read-lines:c_flags.txt} -c %{c})))

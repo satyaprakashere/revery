@@ -1,6 +1,8 @@
 type colorType = SkiaWrapped.colorType;
 type alphaType = SkiaWrapped.alphaType;
 
+let cptr = (Ctypes_static.CPointer(p)) => p;
+
 module Color = {
   type t = int32;
   [@noalloc]
@@ -148,8 +150,8 @@ module Paint = {
   external _setAlphaf: (CI.fatptr(_), [@unboxed] float) => unit =
     "reason_skia_paint_set_alphaf_byte" "reason_skia_paint_set_alphaf";
 
-  let setColor = (paint, color) => _setColor(CI.cptr(paint), color);
-  let setAlpha = (paint, alpha) => _setAlphaf(CI.cptr(paint), alpha);
+  let setColor = (paint, color) => _setColor(cptr(paint), color);
+  let setAlpha = (paint, alpha) => _setAlphaf(cptr(paint), alpha);
 
   let getFilterQuality = SkiaWrapped.Paint.getFilterQuality;
   let setFilterQuality = SkiaWrapped.Paint.setFilterQuality;
@@ -322,7 +324,7 @@ module Rect = {
       "reason_skia_rect_set_byte" "reason_skia_rect_set";
 
     let setLtrb = (~out, left, top, right, bottom) =>
-      _set(CI.cptr(out), left, top, right, bottom);
+      _set(cptr(out), left, top, right, bottom);
   };
 
   [@noalloc]
@@ -341,10 +343,10 @@ module Rect = {
   external _getBottom: CI.fatptr(_) => [@unboxed] float =
     "reason_skia_rect_get_bottom_byte" "reason_skia_rect_get_bottom";
 
-  let getLeft = rect => _getLeft(CI.cptr(rect));
-  let getTop = rect => _getTop(CI.cptr(rect));
-  let getBottom = rect => _getBottom(CI.cptr(rect));
-  let getRight = rect => _getRight(CI.cptr(rect));
+  let getLeft = rect => _getLeft(cptr(rect));
+  let getTop = rect => _getTop(cptr(rect));
+  let getBottom = rect => _getBottom(cptr(rect));
+  let getRight = rect => _getRight(cptr(rect));
 
   let makeEmpty = SkiaWrapped.Rect.makeEmpty;
   let makeLtrb = SkiaWrapped.Rect.makeLtrb;
@@ -535,10 +537,10 @@ module Matrix = {
     "reason_skia_matrix_set_translate_byte" "reason_skia_matrix_set_translate";
 
   let setScale = (mat, scaleX, scaleY, pivotX, pivotY) =>
-    _setScale(CI.cptr(mat), scaleX, scaleY, pivotX, pivotY);
+    _setScale(cptr(mat), scaleX, scaleY, pivotX, pivotY);
 
   let setTranslate = (matrix, translateX, translateY) =>
-    _setTranslate(CI.cptr(matrix), translateX, translateY);
+    _setTranslate(cptr(matrix), translateX, translateY);
 
   let makeAll =
       (

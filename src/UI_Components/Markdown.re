@@ -242,46 +242,43 @@ let generateText = (text, styles, attrs, dispatch, state) => {
 
 let rec generateInline' = (inline, styles, attrs, dispatch, state) => {
   switch (inline) {
-  | Html(t)
-  | Text(t) => generateText(t, styles, attrs, dispatch, state)
-  | Emph(e) =>
+  | Html(_, t)
+  | Text(_, t) => generateText(t, styles, attrs, dispatch, state)
+  | Emph(_, e) =>
     generateInline'(
-      e.content,
+      e,
       styles,
-      switch (e.style) {
-      | Star => {...attrs, inline: [Bolded, ...attrs.inline]}
-      | Underscore => {...attrs, inline: [Italicized, ...attrs.inline]}
-      },
+      {...attrs, inline: [Italicized, ...attrs.inline]},
       dispatch,
       state,
     )
-  | Soft_break => generateText(" ", styles, attrs, dispatch, state)
-  | Hard_break => <View style=Styles.hardBreak />
-  | Ref(r) =>
+  | Strong(_, e) =>
     generateInline'(
-      r.label,
+      e,
       styles,
-      {...attrs, kind: `Link(r.def.destination)},
+      {...attrs, inline: [Bolded, ...attrs.inline]},
       dispatch,
       state,
     )
-  | Link(l) =>
+  | Soft_break(_) => generateText(" ", styles, attrs, dispatch, state)
+  | Hard_break(_) => <View style=Styles.hardBreak />
+  | Link(_, l) =>
     generateInline'(
-      l.def.label,
+      l.label,
       styles,
-      {...attrs, kind: `Link(l.def.destination)},
+      {...attrs, kind: `Link(l.destination)},
       dispatch,
       state,
     )
-  | Code(c) =>
+  | Code(_, c) =>
     generateText(
-      c.content,
+      c,
       styles,
       {kind: `InlineCode, inline: [Monospaced, ...attrs.inline]},
       dispatch,
       state,
     )
-  | Concat(c) =>
+  | Concat(_, c) =>
     <View style=Styles.inline>
       {c
        |> List.map(il => generateInline'(il, styles, attrs, dispatch, state))
@@ -305,7 +302,7 @@ let thematicBreak =
 
 let rec generateMarkdown' = (element, styles, highlighter, dispatch, state) =>
   switch (element) {
-  | Paragraph(p) =>
+  | Paragraph(_, p) =>
     generateInline(
       p,
       styles,
@@ -315,32 +312,33 @@ let rec generateMarkdown' = (element, styles, highlighter, dispatch, state) =>
     )
   // We don't support HTML rendering as of right now, so we'll just render it
   // as text
-  | Html_block(html) =>
+  | Html_block(_, html) =>
     generateInline(
-      Text(html),
+      Text([], html),
       styles,
       {inline: [], kind: `Paragraph},
       dispatch,
       state,
     )
-  | Blockquote(blocks) =>
+  | Blockquote(_, blocks) =>
     generateBlockquote(blocks, styles, highlighter, dispatch, state)
-  | Heading(h) =>
+  | Heading(_, level, text) =>
     generateInline(
-      h.text,
+      text,
       styles,
-      {inline: [Bolded], kind: `Heading(h.level)},
+      {inline: [Bolded], kind: `Heading(level)},
       dispatch,
       state,
     )
-  | Code_block(cb) => generateCodeBlock(cb, styles, highlighter)
-  | List(blist) => generateList(blist, styles, highlighter, dispatch, state)
-  | Thematic_break => thematicBreak
+  | Code_block(_, label, code) => generateCodeBlock(label, code, styles, highlighter)
+  | List(_, listType, _, blocks) => generateList(listType, blocks, styles, highlighter, dispatch, state)
+  | Thematic_break(_) => thematicBreak
   | _ => <View />
   }
 and generateList =
     (
-      blist: Block_list.t(block(inline)),
+      listType,
+      blocks,
       styles,
       highlighter,
       dispatch,
@@ -348,11 +346,11 @@ and generateList =
     ) => {
   <View>
     {List.mapi(
-       (i, blocks) => {
+       (i, itemBlocks) => {
          let text =
-           switch (blist.kind) {
+           switch (listType) {
            | Ordered(_, _) => string_of_int(i + 1) ++ "."
-           | Unordered(_) => "•"
+           | Bullet(_) => "•"
            };
          <View style=Styles.inline>
            <Text
@@ -370,13 +368,13 @@ and generateList =
                     dispatch,
                     state,
                   ),
-                blocks,
+                itemBlocks,
               )
               |> React.listToElement}
            </View>
          </View>;
        },
-       blist.blocks,
+       blocks,
      )
      |> React.listToElement}
   </View>;
@@ -394,25 +392,23 @@ and generateBlockquote = (blocks, styles, highlighter, dispatch, state) => {
   </View>;
 }
 and generateCodeBlock =
-    (codeBlock: Code_block.t, styles, highlighter: SyntaxHighlight.t) => {
+    (label, code, styles, highlighter: SyntaxHighlight.t) => {
   // Not sure why this is an `option` because when there is no label, the
   // Parser gives `Some("")`. For our purposes it's easier to make that `None`
-  let label =
-    switch (codeBlock.label) {
-    | Some("")
-    | None => None
-    | Some(_) as label => label
+  let labelOpt =
+    switch (label) {
+    | "" => None
+    | label => Some(label)
     };
 
   Log.tracef(m =>
-    m("Code block has label : %s", Option.value(label, ~default="(none)"))
+    m("Code block has label : %s", Option.value(labelOpt, ~default="(none)"))
   );
 
   <View style={styles.codeBlock}>
-    {switch (codeBlock.code) {
-     | Some(code) =>
+    {
        let lines = String.split_on_char('\n', code);
-       let highlights = highlighter(~language=label, lines);
+       let highlights = highlighter(~language=labelOpt, lines);
        List.map2(
          (line, highlight) => {
            <View style=Styles.inline>
@@ -448,9 +444,7 @@ and generateCodeBlock =
          highlights,
        )
        |> React.listToElement;
-
-     | None => <View />
-     }}
+    }
   </View>;
 };
 

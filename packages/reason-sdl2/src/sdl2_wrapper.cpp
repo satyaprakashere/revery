@@ -12,6 +12,8 @@
 #include <caml/mlvalues.h>
 #include <caml/threads.h>
 
+#define hash_variant caml_hash_variant
+
 #include "stb_image.h"
 
 #include <SDL2/SDL.h>

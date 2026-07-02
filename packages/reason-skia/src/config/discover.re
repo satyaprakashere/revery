@@ -113,9 +113,10 @@ let flags = os =>
 
 let skiaIncludeFlags = {
   let skiaIncludePath = getenv("SKIA_INCLUDE_PATH");
+  let skiaRootPath = Filename.dirname(skiaIncludePath);
   Sys.readdir(skiaIncludePath)
   |> Array.map(path => "-I" ++ skiaIncludePath ++ "/" ++ path)
-  |> Array.append([|"-I" ++ skiaIncludePath|])
+  |> Array.append([|"-I" ++ skiaIncludePath, "-I" ++ skiaRootPath|])
   |> Array.to_list;
 };
 let cflags = os => {

@@ -70,6 +70,40 @@ We might have some dirty mutable objects for performance - but our high-level AP
 - Try out our [interactive playground](https://www.outrunlabs.com/revery/playground/)
 - Read through our [docs](https://www.outrunlabs.com/revery/api/revery/)
 
+### Building Revery from Source
+
+If you want to build and contribute to Revery itself, follow these steps to set up and compile the repository:
+
+#### Prerequisites
+
+- **macOS / Linux**: Ensure you have standard C/C++ compiler toolchains installed (e.g., `make`, `gcc`/`clang`, `git`, `patch`, and python).
+- **Windows**: Make sure you have Visual Studio Build Tools, `git`, and `patch` configured.
+- **Node.js & npm**: Used for installing the package manager `esy`.
+
+#### Build Instructions
+
+1. **Install `esy` globally**:
+   ```bash
+   npm install -g esy
+   ```
+
+2. **Clone the repository**:
+   ```bash
+   git clone --recursive https://github.com/satyaprakashere/revery.git
+   cd revery
+   ```
+
+3. **Install dependencies and build**:
+   ```bash
+   esy
+   ```
+   *Note: This command fetches and builds all native dependencies, and compiles the Revery package.*
+
+4. **Run the examples**:
+   ```bash
+   esy @examples x Examples
+   ```
+
 ## Contributing
 
 We'd love your help, and welcome PRs and contributions.
