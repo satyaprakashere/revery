@@ -57,7 +57,7 @@
     "@opam/charInfo_width": "*",
     "@brisk/brisk-reconciler": "file:./deps/brisk-reconciler",
     "esy-angle-prebuilt": "1.0.0",
-    "esy-freetype2": "^2.9.1008",
+    "esy-freetype2": "file:./deps/esy-freetype2",
     "@onivim/reason-native-crash-utils": "^1.0.2",
     "@revery/esy-harfbuzz": "file:./deps/esy-harfbuzz",
     "esy-skia": "file:./deps/esy-skia",
@@ -70,6 +70,7 @@
     "@reason-native/rely": "^3.2.1"
   },
   "resolutions": {
+    "esy-freetype2": "path:./deps/esy-freetype2",
     "@revery/esy-harfbuzz": "path:./deps/esy-harfbuzz",
     "@opam/cmdliner": "1.3.0",
     "reperf": "path:./deps/reperf",
