@@ -1,5 +1,5 @@
 {
-  "checksum": "794fb253695729e5f9dbdad598ef0bf5",
+  "checksum": "b209dcc77ab069052d00406abdd36440",
   "root": "revery@link-dev:./package.json",
   "node": {
     "revery@link-dev:./package.json": {
@@ -19,12 +19,12 @@
         "esy-sdl2@2.0.14000@d41d8cd9", "esy-freetype2@2.9.1008@d41d8cd9",
         "esy-angle-prebuilt@1.0.0@d41d8cd9",
         "@revery/timber@path:deps/timber@d41d8cd9",
-        "@revery/esy-harfbuzz@2.6.8002@d41d8cd9",
+        "@revery/esy-harfbuzz@path:deps/esy-harfbuzz@d41d8cd9",
         "@reason-native/rely@path:deps/reason-native/rely.json@d41d8cd9",
         "@opam/uutf@opam:1.0.4@ba7fbef7", "@opam/uucp@opam:17.0.0@843de755",
         "@opam/reason@path:deps/reason@d41d8cd9",
         "@opam/ppx_optcomp@opam:v0.17.1@5b5eb460",
-        "@opam/ppx_deriving@opam:6.1.1@a001df92",
+        "@opam/ppx_deriving@opam:6.1.2@2152e58e",
         "@opam/omd@opam:2.0.0~alpha4@07650e13",
         "@opam/markup@opam:1.0.3@5d49e74a",
         "@opam/lwt_ppx@opam:6.1.0@837cef1b", "@opam/lwt@opam:6.1.2@8dafdfc7",
@@ -320,16 +320,11 @@
         [ "windows", "x86_64" ]
       ]
     },
-    "@revery/esy-harfbuzz@2.6.8002@d41d8cd9": {
-      "id": "@revery/esy-harfbuzz@2.6.8002@d41d8cd9",
+    "@revery/esy-harfbuzz@path:deps/esy-harfbuzz@d41d8cd9": {
+      "id": "@revery/esy-harfbuzz@path:deps/esy-harfbuzz@d41d8cd9",
       "name": "@revery/esy-harfbuzz",
-      "version": "2.6.8002",
-      "source": {
-        "type": "install",
-        "source": [
-          "archive:https://registry.npmjs.org/@revery/esy-harfbuzz/-/esy-harfbuzz-2.6.8002.tgz#sha1:1e6d23c8883d9f6ef5150e543e162ec83b9049cb"
-        ]
-      },
+      "version": "path:deps/esy-harfbuzz",
+      "source": { "type": "install", "source": [ "path:deps/esy-harfbuzz" ] },
       "overrides": [],
       "dependencies": [],
       "devDependencies": [],
@@ -1301,20 +1296,20 @@
         [ "windows", "x86_64" ]
       ]
     },
-    "@opam/ppx_deriving@opam:6.1.1@a001df92": {
-      "id": "@opam/ppx_deriving@opam:6.1.1@a001df92",
+    "@opam/ppx_deriving@opam:6.1.2@2152e58e": {
+      "id": "@opam/ppx_deriving@opam:6.1.2@2152e58e",
       "name": "@opam/ppx_deriving",
-      "version": "opam:6.1.1",
+      "version": "opam:6.1.2",
       "source": {
         "type": "install",
         "source": [
-          "archive:https://opam.ocaml.org/cache/md5/32/3208e6028fbb5a417f751d3529eae031#md5:3208e6028fbb5a417f751d3529eae031",
-          "archive:https://github.com/ocaml-ppx/ppx_deriving/releases/download/v6.1.1/ppx_deriving-6.1.1.tar.gz#md5:3208e6028fbb5a417f751d3529eae031"
+          "archive:https://opam.ocaml.org/cache/sha256/55/5595bfe668d3434b1f1babb3ccb43d4cab3dc1d562b8d8c47c410d88546253ff#sha256:5595bfe668d3434b1f1babb3ccb43d4cab3dc1d562b8d8c47c410d88546253ff",
+          "archive:https://github.com/ocaml-ppx/ppx_deriving/releases/download/6.1.2/ppx_deriving-6.1.2.tbz#sha256:5595bfe668d3434b1f1babb3ccb43d4cab3dc1d562b8d8c47c410d88546253ff"
         ],
         "opam": {
           "name": "ppx_deriving",
-          "version": "6.1.1",
-          "path": "esy.lock/opam/ppx_deriving.6.1.1"
+          "version": "6.1.2",
+          "path": "esy.lock/opam/ppx_deriving.6.1.2"
         }
       },
       "overrides": [],

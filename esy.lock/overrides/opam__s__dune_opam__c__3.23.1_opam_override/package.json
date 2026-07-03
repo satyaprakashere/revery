@@ -1,5 +1,0 @@
-{
-  "buildEnv": {
-    "SDKROOT": "/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk"
-  }
-}
