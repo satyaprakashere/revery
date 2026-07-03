@@ -18,7 +18,7 @@ module IntMap =
 module Make = (ClockImpl: Clock) => {
   type nonrec callback = callback;
   module TickId =
-    UniqueId.Make({});
+    UniqueId.Make();
 
   type tickType =
     | Timeout

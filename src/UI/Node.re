@@ -27,7 +27,7 @@ module ListEx = {
 };
 
 module UniqueId =
-  Revery_Core.UniqueId.Make({});
+  Revery_Core.UniqueId.Make();
 
 type callback = unit => unit;
 
