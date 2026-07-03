@@ -61,7 +61,7 @@
     "@onivim/reason-native-crash-utils": "^1.0.2",
     "@revery/esy-harfbuzz": "file:./deps/esy-harfbuzz",
     "esy-skia": "file:./deps/esy-skia",
-    "esy-sdl2": "^2.0.14000",
+    "esy-sdl2": "file:./deps/esy-sdl2",
     "flex": "file:./deps/flex",
     "reperf": "file:./deps/reperf",
     "rench": "^1.10.0",
@@ -70,6 +70,7 @@
     "@reason-native/rely": "^3.2.1"
   },
   "resolutions": {
+    "esy-sdl2": "path:./deps/esy-sdl2",
     "esy-freetype2": "path:./deps/esy-freetype2",
     "@revery/esy-harfbuzz": "path:./deps/esy-harfbuzz",
     "@opam/cmdliner": "1.3.0",
